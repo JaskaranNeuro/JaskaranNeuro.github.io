@@ -26,7 +26,7 @@
 body {
     color: #322d31;
     font-size: 14px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.80857;
 }
 
@@ -97,7 +97,7 @@ h2 {
 }
 
 h3 {
-    font-size: 18px
+    font-size: 22px
 }
 
 h4 {
@@ -138,6 +138,10 @@ a {
     outline: none;
 }
 
+#home .heading p {
+    font-size: 25px; /* Adjust size as needed */
+}
+
 a,
 .btn {
     text-decoration: none !important;
@@ -171,11 +175,41 @@ blockquote {
 }
 
 ul, li, ol{
-	margin: 0px;
-	list-style: none;
-	padding: 0px;
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
 }
 
+
+.img-fluid {
+    max-width: 13cm; /* Adjust as needed */
+    height: 13cm; /* Adjust to maintain aspect ratio */
+}
+
+.about-me {
+    text-align: justify;
+}
+
+.about-flex-container {
+    display: flex;
+    align-items: center; /* This will vertically align the items */
+    justify-content: space-between; /* This will create space between the text and image */
+}
+
+.img-circle {
+    border-radius: 50%;
+    border: none; /* Removes border */
+    padding: 0; /* Removes padding */
+    box-shadow: none; /* Removes box shadow */
+    background: none; /* Removes background */
+}
+
+.about-me p {
+    font-size: 16.5px; /* Adjust size as needed */
+}
+.message-box p {
+    font-size: 17px; /* Adjust size as needed */
+}
 
 /*------------------------------------------------------------------
     WP CORE
@@ -360,9 +394,9 @@ a img.aligncenter {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #000;
+    background-color: #000000;
     z-index: 0;
-    opacity: .6;
+    opacity: 0.1;
 }
 .heading{
 	color: #fff;
@@ -374,7 +408,7 @@ a img.aligncenter {
 .heading h1{
 	color: #ffffff;
 	font-weight: 700;
-	font-size: 62px;
+	font-size: 48px;
 	text-transform: uppercase;
 }
 .heading p{
@@ -417,7 +451,7 @@ xclip
   display: inline-block;
   padding: .2em 0;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 22px;
 }
 .cd-headline.clip span b{
 	text-transform: uppercase;
@@ -447,7 +481,7 @@ xclip
 #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #333333;
+    background-color: #8cc692;
 }
 
 #clouds{
@@ -494,7 +528,7 @@ xclip
 }
 
 .section.db {
-    background-color: #111111;
+    background-color: #8cc692;
 }
 
 .section.color1 {
@@ -630,13 +664,13 @@ xclip
 
 
 
-.right-box-pro{
-	position: relative;
-	-webkit-box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.3);
+.right-box-pro {
+    position: relative;
+    top: -20px; /* moves the box 20px down */
+    left: 20px; /* moves the box 20px to the right */
 }
 .right-box-pro img{
-	position: relative;
+	position: center;
 	z-index: 2;
 }
 .right-box-pro::before {
@@ -1364,15 +1398,31 @@ hr.invis1 {
 }
 
 
-.gallery-single{
-	margin: 30px 15px;;
+.gallery-single {
+    position: relative;
+    margin: 10px 10px;
+    width: 350px;
+    height: 350px;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
 }
 
 .gallery-single {
 	position: relative;
-	overflow: hidden;
+	overflow:hidden;
 	-webkit-box-shadow: 0 0 10px #ccc;
 	box-shadow: 0 0 10px #ccc;
+}
+
+.gallery-single img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This line ensures that the aspect ratio of the image is maintained */
+}
+
+.col-md-4.col-sm-6.gallery-grid.gal_a h4,
+.col-md-4.col-sm-6.gallery-grid.gal_a p {
+    padding: 12px; /* Adjust this value as needed */
 }
 
 .gallery-list .img-overlay {
@@ -1949,29 +1999,33 @@ select.mobile-device {
 /*# sourceMappingURL=bootstrap-select.css.map */
 
 .bootstrap-select > .btn {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    background: rgba(143, 239, 134, 0.871) none repeat scroll 0 0;
     font-size: 15px;
     height: 33px;
     box-shadow: none !important;
     border: 0 !important;
     padding: 0;
     width: 100%;
-    color: #000080 !important;
+    color: #8cc692!important;
+}
+
+#contact {
+    background-color: #8cc692;
 }
 
 .contact_form {
     border: 1px solid #ededed;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
-    background-color: #f2f3f5;
+    box-shadow: 0 5px 14px rgba(130, 245, 147, 0.875);
+    background-color: #99d08f;
     padding: 40px 30px;
 }
 
 .contact_form .form-control {
-    background-color: #333333;
+    background-color: #8cc692;
     margin-bottom: 30px;
     border: 1px solid #ebebeb;
     box-sizing: border-box;
-    color: #000080;
+    color: #8cc692;
     font-size: 16px;
     outline: 0 none;
     padding: 10px 25px;
@@ -1983,26 +2037,26 @@ select.mobile-device {
 }
 
 .contact_form textarea {
-    color: #000080;
+    color: #8cc692;
     padding: 20px 25px !important;
     height: 160px !important;
 }
 
 .contact_form .form-control::-webkit-input-placeholder {
-    color: #000080;
+    color: #8cc692;
 }
 
 .contact_form .form-control::-moz-placeholder {
     opacity: 1;
-    color: #000080;
+    color: #8cc692;
 }
 
 .contact_form .form-control::-ms-input-placeholder {
-    color: #000080;
+    color: #8cc692;
 }
 
 #contact {
-    background: url(images/bg.png) no-repeat center center #333333;
+    background: url(images/bg.png) no-repeat center center #8cc692;
 }
 
 
@@ -2401,10 +2455,10 @@ select.mobile-device {
       font-size: 42px;
       display: inline-block;
       align-items: left;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 10px rgba(104, 33, 203, 0.1);
       cursor: pointer;
       transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      color: #333;
+      color: rgba(255, 68, 0, 0.67);
       text-decoration: none;
     }
     .wrapper .tooltip {
@@ -2416,7 +2470,7 @@ select.mobile-device {
       color: #ffffff;
       padding: 5px 8px;
       border-radius: 5px;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 10px rgba(239, 111, 32, 0.1);
       opacity: 0;
       pointer-events: none;
       transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -2440,7 +2494,7 @@ select.mobile-device {
     }
     .wrapper .icon:hover span,
     .wrapper .icon:hover .tooltip {
-      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+      text-shadow: 0px -1px 0px rgba(227, 126, 25, 0.1);
     }
     .wrapper .linkedin:hover,
     .wrapper .linkedin:hover .tooltip,
