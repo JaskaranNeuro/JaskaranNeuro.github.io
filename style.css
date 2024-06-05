@@ -405,7 +405,7 @@ a img.aligncenter {
 @media (max-width: 1000px) {
     .main-banner {
         background-image: url('uploads/mobile-banner1.jpg');
-        background-size: 100% 100%; /* Ensure the mobile background also covers the entire section */
+        background-size: cover; /* Ensure the mobile background also covers the entire section */
     }
 }
 .heading {
