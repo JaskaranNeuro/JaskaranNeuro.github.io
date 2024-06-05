@@ -402,10 +402,13 @@ a img.aligncenter {
     justify-content: center; /* Centers items horizontally in the container */
 }
 /* Styles for mobile and smaller screens */
+/* Styles for mobile and smaller screens */
 @media (max-width: 1000px) {
     .main-banner {
         background-image: url('uploads/mobile-banner1.jpg');
-        background-size: cover; /* Ensure the mobile background also covers the entire section */
+        background-size: contain; /* Scale the background image to ensure it's entirely visible */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
     }
 }
 .heading {
