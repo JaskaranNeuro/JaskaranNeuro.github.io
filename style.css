@@ -401,7 +401,12 @@ a img.aligncenter {
     align-items: center; /* Centers items vertically in the container */
     justify-content: center; /* Centers items horizontally in the container */
 }
-
+/* Styles for mobile and smaller screens */
+@media (max-width: 600px) {
+    .main-banner {
+        background-image: url('uploads/mobile-banner1.jpg'); /* Different background for mobile screens */
+    }
+}
 .heading {
     color: #fff;
     /* Remove display: table-cell; */
