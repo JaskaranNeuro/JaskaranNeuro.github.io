@@ -404,7 +404,8 @@ a img.aligncenter {
 /* Styles for mobile and smaller screens */
 @media (max-width: 350px) {
     .main-banner {
-        background-image: url('uploads/mobile-banner1.jpg'); /* Different background for mobile screens */
+        background-image: url('uploads/mobile-banner1.jpg');
+        background-size: cover; /* Ensure the mobile background also covers the entire section */
     }
 }
 .heading {
