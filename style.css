@@ -403,8 +403,10 @@ a img.aligncenter {
 }
 /* Styles for mobile and smaller screens */
 /* Styles for mobile and smaller screens */
+/* Styles for mobile and smaller screens */
 @media (max-width: 1000px) {
     .main-banner {
+        height: 50vh; /* Set a specific height for the banner on mobile screens */
         background-image: url('uploads/mobile-banner1.jpg');
         background-size: contain; /* Scale the background image to ensure it's entirely visible */
         background-position: center; /* Center the image */
