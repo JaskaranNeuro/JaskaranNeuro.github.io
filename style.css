@@ -402,7 +402,7 @@ a img.aligncenter {
     justify-content: center; /* Centers items horizontally in the container */
 }
 /* Styles for mobile and smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 350px) {
     .main-banner {
         background-image: url('uploads/mobile-banner1.jpg'); /* Different background for mobile screens */
     }
