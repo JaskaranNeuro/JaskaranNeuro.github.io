@@ -211,6 +211,20 @@ ul, li, ol{
     font-size: 17px; /* Adjust size as needed */
 }
 
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .img-fluid {
+        max-width: 100%; /* Takes up full width of its container */
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    .about-flex-container {
+        flex-direction: column; /* Stacks items vertically */
+    }
+
+    .col-md-8, .col-md-4 {
+        width: 100%; /* Takes up full width of its container */
+    }
+}
 /*------------------------------------------------------------------
     WP CORE
 -------------------------------------------------------------------*/
@@ -377,11 +391,24 @@ a img.aligncenter {
     SECTIONS
 -------------------------------------------------------------------*/
 
-.main-banner{
-	height: 100%;
-	position: relative;
+.main-banner {
+    height: 100%;
+    position: relative;
+    background-image: url('uploads/banner.jpg');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    display: flex;
+    align-items: center; /* Centers items vertically in the container */
+    justify-content: center; /* Centers items horizontally in the container */
 }
 
+.heading {
+    color: #fff;
+    /* Remove display: table-cell; */
+    /* Remove vertical-align: middle; */
+    position: relative;
+    z-index: 1;
+}
 .main-banner{
 	display: table;
     width: 100%;
@@ -419,7 +446,17 @@ a img.aligncenter {
 .heading h3{
 	color: ffffff;
 }
-
+@media (max-width: 600px) {
+    .heading h1 {
+        font-size: 24px; /* Adjust as needed */
+    }
+    .heading p {
+        font-size: 16px; /* Adjust as needed */
+    }
+    .cd-words-wrapper b {
+        font-size: 14px; /* Adjust as needed */
+    }
+}
 .cd-words-wrapper {
   display: inline-block;
   position: relative;
@@ -431,6 +468,20 @@ a img.aligncenter {
   white-space: nowrap;
   left: 0;
   top: 0;
+}
+/* Styles for mobile and smaller screens */
+@media (max-width: 600px) {
+    .heading h1 {
+        font-size: 22px; /* Adjust as needed */
+    }
+    .heading p {
+        font-size: 14px; /* Adjust as needed */
+    }
+    .cd-words-wrapper b {
+        font-size: 16px; /* Adjust as needed */
+        white-space: normal; /* Allow text to wrap on small screens */
+        position: absolute; /* Take element out of absolute positioning on small screens */
+    }
 }
 .cd-words-wrapper b.is-visible {
   position: relative;
