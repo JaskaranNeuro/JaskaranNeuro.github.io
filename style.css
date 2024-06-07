@@ -408,7 +408,7 @@ a img.aligncenter {
     .main-banner {
         height: 50vh; /* Set a specific height for the banner on mobile screens */
         background-image: url('uploads/mobile-banner1.jpg');
-        background-size: contain; /* Scale the background image to ensure it's entirely visible */
+        background-size: 100% 100%; /* Scale the background image to ensure it's entirely visible */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Prevent the image from repeating */
     }
@@ -1237,7 +1237,15 @@ xclip
 	padding-bottom: 10px;
 	padding-left: 15px;
 }
-
+/* Styles for mobile and smaller screens */
+@media (max-width: 1000px) {
+    .message-box {
+        padding: 0 20px; /* Add 20px of padding to the left and right of the text */
+    }
+    .message-box p {
+        text-align: justify; /* Justify the text */
+    }
+}
 .post-media {
     position: relative;
 }
