@@ -407,7 +407,7 @@ a img.aligncenter {
 @media (max-width: 1000px) {
     .main-banner {
         height: 50vh; /* Set a specific height for the banner on mobile screens */
-        background-image: url('uploads/Home page mobile.gif');
+        background-image: url('uploads/giphy.gif');
         background-size: 100% 100%; /* Scale the background image to ensure it's entirely visible */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Prevent the image from repeating */
