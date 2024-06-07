@@ -406,11 +406,12 @@ a img.aligncenter {
 /* Styles for mobile and smaller screens */
 @media (max-width: 1000px) {
     .main-banner {
-        height: 50vh; /* Set a specific height for the banner on mobile screens */
+        height: 50vh;
         background-image: url('uploads/giphy.gif');
-        background-size: 100% 100%; /* Scale the background image to ensure it's entirely visible */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Add this line */
     }
 }
 
