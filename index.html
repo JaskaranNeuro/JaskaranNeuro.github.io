@@ -538,6 +538,31 @@ document.write("<i>Info as of: </i> "+lastModifiedDate);
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
-
+    <div class="main-banner">
+      <!-- Your content goes here -->
+  </div>
+  
+  <script>
+      // Check if the viewport is less than or equal to 1000px
+      if (window.innerWidth <= 1000) {
+          // Create a new img element
+          var img = document.createElement('img');
+  
+          // Set the source of the img element to your GIF
+          img.src = 'uploads/giphy.gif';
+  
+          // Set the style of the img element
+          img.style.position = 'absolute';
+          img.style.width = '100%';
+          img.style.height = '100%';
+          img.style.objectFit = 'cover';
+  
+          // Get the .main-banner element
+          var mainBanner = document.querySelector('.main-banner');
+  
+          // Insert the img element as the first child of the .main-banner element
+          mainBanner.insertBefore(img, mainBanner.firstChild);
+      }
+  </script>
 </body>
 </html>
